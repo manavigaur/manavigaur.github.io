@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>With Manavi — Social Media, Sorted</title>
+<title>[Your Name] — Social Media, Sorted</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap');
 
@@ -208,6 +208,20 @@
   .step p{ font-size: 0.92rem; opacity: 0.8; }
 
   /* ---------- CONTACT ---------- */
+  .usp{
+    margin: 10px 0 60px;
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 20px;
+    padding: 36px 30px;
+    text-align:center;
+    transform: rotate(-0.5deg);
+    position: relative;
+    z-index: 1;
+  }
+  .usp p{ font-family: 'Fredoka', sans-serif; font-size: clamp(1.2rem, 3.2vw, 1.8rem); max-width: 600px; margin: 0 auto; }
+  .usp span{ color: var(--coral); }
+
   .contact{
     padding: 60px 0 90px;
     text-align: center;
@@ -231,9 +245,9 @@
 
 <div class="wrap">
   <nav>
-    <div class="logo">Manavi Gaur</div>
+    <div class="logo">[Your Name]</div>
     <div class="nav-links">
-      <a href="#services">Services</a>
+      <a href="services.html">Services</a>
       <a href="#how">Process</a>
       <a href="#contact">Contact</a>
     </div>
@@ -241,27 +255,32 @@
 
   <section class="hero">
     <div class="blob"></div>
-    <span class="eyebrow">social media, sorted</span>
+    <span class="eyebrow">no slop, ever</span>
     <h1>
       I make small businesses
       <span class="highlight">impossible to scroll past
         <svg viewBox="0 0 300 14" preserveAspectRatio="none"><path d="M2 10 Q 75 2 150 8 T 298 6" stroke="#FF5D73" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
       </span>.
     </h1>
-    <p class="subhead">Hi, I'm Manavi — I plan, write, and post social content for small businesses that would rather be running their business than fighting the algorithm.</p>
+    <p class="subhead">Hi, I'm [Your Name]. I plan, write, and post social content for small businesses that would rather be running their business than fighting the algorithm — using AI to move fast, never to sound like it.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#contact">Let's chat</a>
       <a class="btn btn-ghost" href="#services">See what I do</a>
     </div>
   </section>
 
+  <div class="usp">
+    <p>We use AI to move <span>fast</span> — never to sound like it.</p>
+  </div>
+
   <section class="about">
     <span class="tag">// about</span>
-    <p>Six years into a career in marketing, I got tired of watching small businesses either DIY their social media into oblivion or pay agency prices for a junior's worth of attention. So I do it myself — one client, one calendar, one voice at a time. No jargon, no 40-page decks, just content that sounds like you and shows up on time.</p>
+    <p>Every business right now has the same options: DIY it with ChatGPT, hire a content mill, or pay agency prices for a junior's worth of attention — and they all produce some flavour of the same generic AI slop. Six years into a career in marketing, I got tired of watching small businesses drown in it. So I do this instead — one client, one calendar, one real voice at a time. No jargon, no 40-page decks, just content that sounds unmistakably like you and shows up on time.</p>
   </section>
 
   <section class="services" id="services">
     <h2 class="section-title">What I do</h2>
+    <p style="max-width:520px; opacity:0.75; margin-bottom:28px;">This is where most clients start. There's more on the <a href="services.html" style="text-decoration:underline;">full services page</a> — brand personality, graphic design, and the de-slop audit.</p>
     <div class="cards">
       <div class="card">
         <div class="dot" style="background:var(--coral)"></div>
@@ -308,7 +327,7 @@
   </section>
 </div>
 
-<footer>Manavi · Based anywhere, working everywhere</footer>
+<footer>[Your Name] · Based anywhere, working everywhere</footer>
 
 </body>
 </html>
