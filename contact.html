@@ -22,7 +22,9 @@
 
   main{ flex:1; display:flex; align-items:center; }
   .contact-hero{ padding: 40px 0 60px; position:relative; text-align:center; width:100%; }
-  .blob{ position:absolute; width:320px; height:320px; background:var(--green); opacity:0.16; border-radius:44% 56% 61% 39% / 45% 43% 57% 55%; top:-60px; left:50%; transform: translateX(-50%); z-index:0; }
+  .blob{ position:absolute; width:320px; height:320px; background:var(--green); opacity:0.16; border-radius:44% 56% 61% 39% / 45% 43% 57% 55%; top:-60px; left:50%; z-index:0; animation: floatCenter 9s ease-in-out infinite; pointer-events: none; }
+  @keyframes floatCenter{ 0%,100%{ transform: translateX(-50%) translateY(0) rotate(0deg); } 50%{ transform: translateX(-50%) translateY(18px) rotate(8deg); } }
+  @media (prefers-reduced-motion: reduce){ .blob{ animation: none; } }
 
   .eyebrow{ font-family:'JetBrains Mono',monospace; font-size:0.8rem; background:var(--ink); color:var(--bg); display:inline-block; padding:5px 12px; border-radius:100px; margin-bottom:20px; transform:rotate(-2deg); position:relative; z-index:1; }
 
