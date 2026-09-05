@@ -29,7 +29,7 @@
   .nav-links a:hover, .nav-links a:focus-visible{ opacity: 1; }
 
   .hero{ padding: 64px 0 60px; position: relative; }
-  .blob{ position: absolute; width: 380px; height: 380px; background: var(--coral); opacity: 0.18; border-radius: 44% 56% 61% 39% / 45% 43% 57% 55%; top: -80px; right: -100px; z-index: 0; animation: float 9s ease-in-out infinite; }
+  .blob{ position: absolute; width: 380px; height: 380px; background: var(--coral); opacity: 0.18; border-radius: 44% 56% 61% 39% / 45% 43% 57% 55%; top: -80px; right: -100px; z-index: 0; animation: float 9s ease-in-out infinite; pointer-events: none; }
   @keyframes float{ 0%,100%{ transform: translate(0,0) rotate(0deg); } 50%{ transform: translate(-14px,18px) rotate(8deg); } }
   @media (prefers-reduced-motion: reduce){ .blob{ animation: none; } }
 
@@ -112,7 +112,7 @@
   </section>
 
   <div class="usp">
-    <p>We use AI to move <span>fast</span> — never to sound like it.</p>
+    <p>I use AI to move <span>fast</span> — never to sound like it.</p>
   </div>
 
   <section class="about">
