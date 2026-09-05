@@ -7,14 +7,7 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap');
 
-  :root{
-    --bg: #FFF4D6;
-    --ink: #241C3D;
-    --coral: #FF5D73;
-    --blue: #3A5FFF;
-    --green: #2FBF71;
-    --card: #FFFFFF;
-  }
+  :root{ --bg: #FFF4D6; --ink: #241C3D; --coral: #FF5D73; --blue: #3A5FFF; --green: #2FBF71; --card: #FFFFFF; }
   *{ box-sizing:border-box; margin:0; padding:0; }
   html{ scroll-behavior: smooth; }
   body{ background: var(--bg); color: var(--ink); font-family:'Space Grotesk',sans-serif; line-height:1.55; overflow-x:hidden; }
@@ -27,7 +20,7 @@
   .nav-links a{ text-decoration:none; opacity:0.75; }
   .nav-links a:hover, .nav-links a:focus-visible{ opacity:1; }
 
-  .hero{ padding: 40px 0 60px; position:relative; }
+  .hero{ padding: 40px 0 50px; position:relative; }
   .blob{ position:absolute; width:340px; height:340px; background:var(--blue); opacity:0.15; border-radius:44% 56% 61% 39% / 45% 43% 57% 55%; top:-90px; right:-90px; z-index:0; }
   .eyebrow{ font-family:'JetBrains Mono',monospace; font-size:0.8rem; background:var(--ink); color:var(--bg); display:inline-block; padding:5px 12px; border-radius:100px; margin-bottom:20px; transform:rotate(-2deg); }
   h1{ font-family:'Fredoka',sans-serif; font-weight:600; font-size:clamp(2.2rem,5.5vw,3.6rem); line-height:1.08; max-width:760px; position:relative; z-index:1; }
@@ -35,57 +28,25 @@
   h1 .highlight{ position:relative; white-space:nowrap; }
   h1 .highlight svg{ position:absolute; left:0; bottom:-8px; width:100%; height:12px; }
 
-  .usp{
-    margin: 50px 0 70px;
-    background: var(--ink);
-    color: var(--bg);
-    border-radius: 20px;
-    padding: 40px 34px;
-    text-align:center;
-    transform: rotate(-0.5deg);
-  }
+  .usp{ margin: 40px 0 60px; background: var(--ink); color: var(--bg); border-radius: 20px; padding: 40px 34px; text-align:center; transform: rotate(-0.5deg); }
   .usp p{ font-family:'Fredoka',sans-serif; font-size:clamp(1.3rem,3.5vw,2rem); max-width:640px; margin:0 auto; }
   .usp span{ color: var(--coral); }
 
+  .cat{ padding: 10px 0 60px; }
+  .cat-title{ font-family:'JetBrains Mono',monospace; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; opacity:0.55; margin-bottom: 18px; }
   .section-title{ font-family:'Fredoka',sans-serif; font-size:clamp(1.6rem,4vw,2.1rem); margin-bottom:10px; }
   .section-lede{ opacity:0.75; max-width:560px; margin-bottom:34px; }
 
-  .offerings{ display:grid; gap:22px; padding: 10px 0 70px; }
-  .offer{
-    background: var(--card);
-    border: 2px solid var(--ink);
-    border-radius: 18px;
-    padding: 30px;
-    display:grid;
-    grid-template-columns: 60px 1fr auto;
-    gap: 22px;
-    align-items:start;
-    box-shadow: 6px 6px 0 var(--ink);
-  }
+  .offerings{ display:grid; gap:20px; }
+  .offer{ background: var(--card); border: 2px solid var(--ink); border-radius: 18px; padding: 28px; display:grid; grid-template-columns: 52px 1fr; gap: 20px; align-items:start; box-shadow: 6px 6px 0 var(--ink); }
   @media (max-width:640px){ .offer{ grid-template-columns: 1fr; } }
-  .offer .num{
-    font-family:'Fredoka',sans-serif; font-weight:700; font-size:1.6rem;
-    width:52px; height:52px; border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    color: var(--bg);
-  }
-  .offer h3{ font-family:'Fredoka',sans-serif; font-size:1.25rem; margin-bottom:8px; }
-  .offer p{ font-size:0.98rem; opacity:0.85; max-width:480px; }
-  .offer .best-for{ font-family:'JetBrains Mono',monospace; font-size:0.78rem; opacity:0.55; margin-top:10px; display:block; }
-  .offer .price-tag{
-    font-family:'JetBrains Mono',monospace; font-size:0.8rem;
-    background: var(--bg); border:2px solid var(--ink); border-radius:100px;
-    padding: 6px 14px; white-space:nowrap; align-self:center; height:fit-content;
-    transform: rotate(2deg);
-  }
+  .offer .num{ font-family:'Fredoka',sans-serif; font-weight:700; font-size:1.4rem; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; color: var(--bg); }
+  .offer h3{ font-family:'Fredoka',sans-serif; font-size:1.2rem; margin-bottom:8px; }
+  .offer p{ font-size:0.97rem; opacity:0.85; max-width:520px; }
 
   .highlight-offer{ border-color: var(--coral); }
   .highlight-offer .num{ background: var(--coral); }
-  .badge{
-    font-family:'JetBrains Mono',monospace; font-size:0.7rem;
-    background: var(--coral); color:white; padding:4px 10px; border-radius:100px;
-    display:inline-block; margin-bottom:8px; transform: rotate(-3deg);
-  }
+  .badge{ font-family:'JetBrains Mono',monospace; font-size:0.7rem; background: var(--coral); color:white; padding:4px 10px; border-radius:100px; display:inline-block; margin-bottom:8px; transform: rotate(-3deg); }
 
   .contact{ padding: 30px 0 90px; text-align:center; }
   .contact h2{ font-family:'Fredoka',sans-serif; font-size:clamp(1.7rem,4.5vw,2.4rem); max-width:520px; margin:0 auto 24px; }
@@ -93,7 +54,7 @@
   .btn:hover, .btn:focus-visible{ transform: translateY(-2px); }
   .btn:focus-visible{ outline:3px solid var(--blue); outline-offset:3px; }
 
-  footer{ text-align:center; font-size:0.85rem; opacity:0.5; padding-bottom:40px; font-family:'JetBrains Mono',monospace; }
+  footer{ text-align: center; font-size: 0.85rem; opacity: 0.55; padding-bottom: 40px; font-family: 'JetBrains Mono', monospace; }
 </style>
 </head>
 <body>
@@ -104,7 +65,7 @@
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </div>
   </nav>
 
@@ -117,65 +78,57 @@
     <p>Everything here is built to sound like you, not like a template — I use AI to work fast, never to do the thinking for me.</p>
   </section>
 
-  <div class="usp">
-    <p>We use AI to move <span>fast</span> — never to sound like it.</p>
-  </div>
+  <div class="usp"><p>We use AI to move <span>fast</span> — never to sound like it.</p></div>
 
-  <section id="offerings" class="offerings-section">
-    <h2 class="section-title">What I offer</h2>
-    <p class="section-lede">Pick one to start, add on as you grow. No bundles you don't need.</p>
-
+  <section class="cat">
+    <span class="cat-title">// social & content</span>
     <div class="offerings">
       <div class="offer">
         <div class="num" style="background:var(--coral)">1</div>
-        <div>
-          <h3>Social Media Management</h3>
-          <p>Content, captions, and scheduling in your voice — planned around what your customers actually want to see, posted consistently without you opening the app.</p>
-          <span class="best-for">best for: businesses spending 10+ hrs/month on social with nothing to show for it</span>
-        </div>
-        <div class="price-tag">from $400/mo</div>
+        <div><h3>Social Media Management</h3><p>Content calendars, captions, and scheduling in your voice — planned around what your customers actually want to see, posted consistently without you opening the app.</p></div>
       </div>
-
       <div class="offer">
-        <div class="num" style="background:var(--blue)">2</div>
-        <div>
-          <h3>Brand Personality Package</h3>
-          <p>A voice & tone guide plus a mini brand system — colours, type, signature details — so everything you post looks and sounds unmistakably like you.</p>
-          <span class="best-for">best for: businesses with a logo but no real personality yet</span>
-        </div>
-        <div class="price-tag">one-off</div>
+        <div class="num" style="background:var(--coral)">2</div>
+        <div><h3>Design & Collateral</h3><p>Social graphics, brochures, flyers, and presentation materials — designed to stay consistent everywhere, instead of looking like five different tools made them.</p></div>
       </div>
+    </div>
+  </section>
 
+  <section class="cat">
+    <span class="cat-title">// web & digital presence</span>
+    <div class="offerings">
       <div class="offer">
-        <div class="num" style="background:var(--green)">3</div>
-        <div>
-          <h3>Graphic Design Add-On</h3>
-          <p>On-brand social graphics, flyers, menus, and business cards — everything stays consistent with your system instead of looking like it was made by five different tools.</p>
-          <span class="best-for">best for: existing social or brand clients wanting a consistent look everywhere</span>
-        </div>
-        <div class="price-tag">add-on</div>
+        <div class="num" style="background:var(--blue)">3</div>
+        <div><h3>Website Support</h3><p>Help building or refreshing a simple, clean website that actually reflects your business — not a generic template everyone else is using.</p></div>
       </div>
-
       <div class="offer highlight-offer">
         <div class="num">4</div>
-        <div>
-          <span class="badge">most requested</span>
-          <h3>The De-Slop Audit</h3>
-          <p>A full review of your current website, social, and ads with a plain-English punch list of exactly where it reads generic, templated, or AI-flattened — and how to fix it.</p>
-          <span class="best-for">best for: anyone who suspects their marketing already looks like everyone else's</span>
-        </div>
-        <div class="price-tag">flat fee</div>
+        <div><span class="badge">most requested</span><h3>The De-Slop Audit</h3><p>A full review of your current website, social, and ads with a plain-English punch list of exactly where it reads generic, templated, or AI-flattened — and how to fix it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat">
+    <span class="cat-title">// ads & analytics</span>
+    <div class="offerings">
+      <div class="offer">
+        <div class="num" style="background:var(--green)">5</div>
+        <div><h3>Paid Ads</h3><p>Google and Meta campaigns built around real keyword research and targeting — set up to actually grow the right kind of visibility, not just spend.</p></div>
+      </div>
+      <div class="offer">
+        <div class="num" style="background:var(--green)">6</div>
+        <div><h3>Analytics & Reporting</h3><p>Straightforward, plain-English reporting on what's working and what isn't — no dashboards nobody reads.</p></div>
       </div>
     </div>
   </section>
 
   <section class="contact" id="contact">
     <h2>Not sure which one you need?</h2>
-    <a class="btn" href="mailto:[email protected]">Let's figure it out →</a>
+    <a class="btn" href="contact.html">Let's figure it out →</a>
   </section>
 </div>
 
-<footer>Manavi · social media, sorted · no slop, ever</footer>
+<footer>Manavi · marketing, sorted · no slop, ever</footer>
 
 </body>
 </html>
