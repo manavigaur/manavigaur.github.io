@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manavi — Digital Card</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap');
+
+  :root{ --bg: #FFF4D6; --ink: #241C3D; --coral: #FF5D73; --blue: #3A5FFF; --green: #2FBF71; --card: #FFFFFF; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+  }
+  a{ color: inherit; }
+
+  .blob1{ position:absolute; width:300px; height:300px; background:var(--coral); opacity:0.22; border-radius:44% 56% 61% 39% / 45% 43% 57% 55%; top:-80px; right:-90px; z-index:0; }
+  .blob2{ position:absolute; width:260px; height:260px; background:var(--blue); opacity:0.16; border-radius:61% 39% 44% 56% / 55% 45% 57% 43%; bottom:-70px; left:-80px; z-index:0; }
+
+  .wrap{
+    max-width: 420px;
+    width: 100%;
+    padding: 56px 28px 40px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .avatar{
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: var(--ink);
+    color: var(--bg);
+    display: flex; align-items:center; justify-content:center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    border: 3px solid var(--ink);
+    box-shadow: 5px 5px 0 var(--coral);
+    margin-bottom: 22px;
+  }
+
+  h1{ font-family:'Outfit', sans-serif; font-weight:700; font-size: 1.7rem; }
+  .role{ font-family:'JetBrains Mono', monospace; font-size: 0.85rem; opacity:0.65; margin-top: 6px; }
+  .tag{ margin-top: 18px; font-size: 1rem; opacity:0.85; max-width: 320px; }
+
+  .usp{
+    margin-top: 26px;
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 16px;
+    padding: 16px 20px;
+    font-family:'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transform: rotate(-1deg);
+  }
+  .usp span{ color: var(--coral); }
+
+  .links{
+    margin-top: 34px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .btn{
+    display:flex; align-items:center; justify-content:center; gap: 10px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 16px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    border: 2px solid var(--ink);
+    transition: transform 0.15s ease;
+  }
+  .btn:hover, .btn:focus-visible{ transform: translateY(-2px); }
+  .btn:focus-visible{ outline: 3px solid var(--blue); outline-offset: 3px; }
+  .btn-primary{ background: var(--ink); color: var(--bg); }
+  .btn-outline{ background: var(--card); color: var(--ink); }
+
+  footer{ margin-top: 40px; font-family:'JetBrains Mono', monospace; font-size: 0.78rem; opacity: 0.5; }
+</style>
+</head>
+<body>
+  <div class="blob1"></div>
+  <div class="blob2"></div>
+
+  <div class="wrap">
+    <div class="avatar">M</div>
+    <h1>Manavi</h1>
+    <div class="role">marketing · social · design</div>
+    <p class="tag">I plan, design, and manage marketing for small businesses, from social content to websites to ads.</p>
+
+    <div class="usp">Speed from AI. <span>Voice from me.</span></div>
+
+    <div class="links">
+      <a class="btn btn-primary" href="https://manavigaur.github.io">🌐 Visit my website</a>
+      <a class="btn btn-outline" href="manavi.vcf" download>📇 Save my contact</a>
+      <a class="btn btn-outline" href="mailto:manavigaur07@gmail.com">✉️ Email me</a>
+      <a class="btn btn-outline" href="https://www.linkedin.com/in/mgaur2507/" target="_blank" rel="noopener">💼 Connect on LinkedIn</a>
+    </div>
+
+    <footer>Manavi · marketing, sorted · no slop, ever</footer>
+  </div>
+</body>
+</html>
