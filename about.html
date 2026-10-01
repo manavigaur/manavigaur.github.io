@@ -40,9 +40,10 @@
 
   .about{ padding: 40px 0 70px; display: flex; gap: 36px; align-items: flex-start; flex-wrap: wrap; }
 .about-photo{
-    width: 140px; height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 140px !important; height: 140px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    overflow: hidden;
     box-shadow: 8px 8px 0 var(--coral);
     flex-shrink: 0;
   }
@@ -84,7 +85,7 @@
   </section>
 
   <section class="about">
-    <img class="about-photo" src="IMG.jpg" alt="Manavi">
+    <img class="about-photo" src="IMG.jpeg" alt="Manavi">
     <div class="about-text">
       <span class="tag">// about</span>
       <p>Full disclosure: I've been meaning to do this for actual years. The kind of thing you keep telling yourself you'll start "next month," until one day next month finally shows up. Well, it's here, and I am genuinely thrilled about it.</p>
