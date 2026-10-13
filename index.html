@@ -92,6 +92,15 @@
   .contact{ padding: 60px 0 90px; text-align: center; }
   .contact h2{ font-family: 'Outfit', sans-serif; font-size: clamp(1.8rem, 5vw, 2.8rem); max-width: 560px; margin: 0 auto 26px; }
   footer{ text-align: center; font-size: 0.85rem; opacity: 0.55; padding-bottom: 40px; font-family: 'JetBrains Mono', monospace; }
+  .menu-toggle{ display:none; font-size:1.4rem; line-height:1; background:var(--card); color:var(--ink); border:2px solid var(--ink); border-radius:12px; padding:6px 12px; cursor:pointer; }
+@media (max-width: 640px){
+  nav{ position:relative; }
+  .menu-toggle{ display:block; }
+  .nav-links{ display:none; position:absolute; top:calc(100% - 14px); right:0; z-index:20; flex-direction:column; gap:0; min-width:180px; background:var(--card); border:2px solid var(--ink); border-radius:16px; box-shadow:5px 5px 0 var(--ink); overflow:hidden; }
+  .nav-links.open{ display:flex; }
+  .nav-links a{ padding:14px 20px; opacity:1; border-bottom:1px solid rgba(36,28,61,0.12); }
+  .nav-links a:last-child{ border-bottom:none; }
+}
 </style>
 </head>
 <body>
